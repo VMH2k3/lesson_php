@@ -74,4 +74,8 @@ echo "Hello guy";
 // include "index.php"; thêm file index vào nếu lỗi thì các câu lệnh dưới cẫn chạy
 // require "index.php"; nếu lỗi thì các câu lệnh dưới sẽ dừng lại
 
+//gán chuỗi cho hằng
+define('_AGENCY','VŨ Minh Hoãng');
+
+
 ?>
