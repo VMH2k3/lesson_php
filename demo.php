@@ -111,6 +111,7 @@ $bien = '1,2,3';
 // $bien = "Hoàng vô cùng đẹp trai!";
 // echo substr_replace($bien, 'vã ọ',7,9);
 // chú ý cú pháp ($str, chuỗi thay thế, vị trí bắt đầu thay thế, độ dài chuỗi bị thay thế);
+//tiếp tục
 
 
 ?>
