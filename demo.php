@@ -41,7 +41,7 @@ const VMH_1 = 19+1;//khai báo hằng số nên viết Hoa
 //kiểu dữ liệu mảng
  
 // $bien = [1,2,3];
-$bien = '1,2,3';
+// $bien = '1,2,3';
 // $bien1 = (array)$bien;
 // var_dump($bien1);
 // echo is_array($bien1);
@@ -111,7 +111,86 @@ $bien = '1,2,3';
 // $bien = "Hoàng vô cùng đẹp trai!";
 // echo substr_replace($bien, 'vã ọ',7,9);
 // chú ý cú pháp ($str, chuỗi thay thế, vị trí bắt đầu thay thế, độ dài chuỗi bị thay thế);
-//tiếp tục
+
+//hàm chuyển tất cả các kí tự sang chữ thường
+//(KHÔNG ÁP DỤNG CHO CHỮ CÓ DẤU);
+// $bien ='HOANG DEP TRAI VA O !' ;
+// echo strtolower($bien);
+
+//hàm chuyển các kí tự trong chuỗi sang chữ hoa
+//(KHÔNG ÁP DỤNG CHO CHỮ CÓ DẤU);
+// $bien = 'hoang dep trai va o!';
+// echo strtoupper($bien);
+
+//hàm chuyển chữ cái đầu của chuỗi sang chữ hoa
+// $bien = 'hoang dep trai';
+// echo ucfirst($bien).'<br>';
+
+// //hàm chuyển chữ cái đầu của chuỗi sang chữ thường
+// $bien = 'Hoang dep trai';
+// echo lcfirst($bien);
+
+//chuyển chữ cái đầu tiên của tất cả các từ trong chuỗi sang chữ hoa
+// $bien = 'hoang dep trai va o!';
+// echo ucwords($bien);
+
+//hàm xoá tất cả kí tự x ở đầu và cuối
+//cú pháp : trim($str,kí tự cần xoá);
+//nếu để trông kí tự x thì hàm tự hiểu là khoảng trắng;
+// $bien = 'iiiiiihoang dep trai iiii';
+// echo trim($bien,'i');
 
 
+//hàm json_encode và json_decode
+//hàm chuyển chuỗi  array or object to Json
+// $arr=[1,2,3,4,5];
+// $json_encode = json_encode($arr);
+// echo $json_encode.'<br>';
+
+// //hàm chuyển json về arr or object
+
+// $json_decode=json_decode($json_encode,true); 
+// print_r($json_decode); //in mảng thì dùng print
+
+
+//viết chương trình lấy 5 kí tự cuối của chuỗi
+
+// $bien = 'Hoang dep trai va o';
+// $substr = substr($bien,-5); // cut từ cuối lên
+// echo $substr;
+
+//đối với trường hợp tiếng việt 
+// $bien = 'Hoàng đẹp trai vã ọ';
+// $substr = mb_substr($bien, -5, null,'UTF-8');
+// echo $substr;
+
+//hàm tính độ dài chuỗi
+// $bien='Hoàng đẹp trai vã ọ';
+// echo mb_strlen($bien,'UTF-8'); //hàm dùng để đếm kí tự tiếng Việt
+
+// //HÀM TRONG PHP
+
+// function ten_ham(){
+//     //nội dung
+// }
+
+//đệ quy
+
+//hàm isset và hàm empty
+
+//hàm isset  kiểm tra biến có tồn tại hay không
+//ko kiểm tra được dữ liệu của biến và trường hợp biến = null
+
+$bien = true;
+if(isset($bien)){
+    echo $bien ;
+}
+
+
+//hàm empty kiểm tra xem biến có tồn tại hay không
+//chỉ trả về kiểu dữ liệu boolean 
+
+
+
+//MẢNG TRONG PHP
 ?>
