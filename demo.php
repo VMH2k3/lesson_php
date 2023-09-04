@@ -181,10 +181,10 @@ const VMH_1 = 19+1;//khai báo hằng số nên viết Hoa
 //hàm isset  kiểm tra biến có tồn tại hay không
 //ko kiểm tra được dữ liệu của biến và trường hợp biến = null
 
-$bien = true;
-if(isset($bien)){
-    echo $bien ;
-}
+// $bien = true;
+// if(isset($bien)){
+//     echo $bien ;
+// }
 
 
 //hàm empty kiểm tra xem biến có tồn tại hay không
@@ -193,4 +193,43 @@ if(isset($bien)){
 
 
 //MẢNG TRONG PHP
+$arr = array('HTML','JS','PHP');
+
+//in mảng ra màn hình
+// echo '<pre>';
+// print_r($arr);
+// echo '</pre>';
+
+$arr2 = array('key1'=>'HTML','key2'=>'JS','key3'=>'PHP');
+
+//in mảng ra màn hình
+// echo '<pre>';
+// print_r($arr2);
+// echo '</pre>';
+
+//thêm phần tử vào mảng
+$arr2['key4']='reactjs';
+$arr2[]='Nodejs'; // do key đang đặt tự do nên khi mình để trống nó sẽ đánh tuần tự từ 0;
+array_push($arr2,'tôi sẽ','thành công'); //thêm vào mảng 2 phần tử 
+// echo '<pre>';
+// print_r($arr2);
+// echo '</pre>';
+
+//Đọc mảng
+
+// if(!empty($arr2)){
+//     foreach($arr2 as $key => $value)
+//     {
+//         echo $key.'  '.$value.'<br>';
+//     }
+    
+// }
+
+
+//HÀM LIÊN QUAN ĐẾN MẢNG
+
+// $arr3 = array_values($arr2) ;//đưa mảng về mảng tuần tự
+// $arr4 = array_keys($arr2);//trả về một mảng có giá trị là các key của mảng $arr2
+// $bien = array_pop($arr2); // trả về phần tử cuối cùng của mảng
+
 ?>
