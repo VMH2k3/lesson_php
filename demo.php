@@ -231,5 +231,42 @@ array_push($arr2,'tôi sẽ','thành công'); //thêm vào mảng 2 phần tử
 // $arr3 = array_values($arr2) ;//đưa mảng về mảng tuần tự
 // $arr4 = array_keys($arr2);//trả về một mảng có giá trị là các key của mảng $arr2
 // $bien = array_pop($arr2); // trả về phần tử cuối cùng của mảng
+//is_array() kiểm tra xem biến có phải kiểu array hay không
+
+// array_push($arr,'Tôi sẽ thành công !') thêm phần tử vào trong mảng
+// array_shift($arr) hàm xoá phần tử đầu tiên của mảng và trả về phần tử đã xoá
+// array_unshift($arr,'Tôi sẽ thành công !') thêm phần tử vào đầu mảng và trả về số lượng phần tử của mảng
+// in_array($value,$arr) hàm kiểm tra xem $value có nằm trong mảng không ?
+
+// HÀM SORT()
+// sắp xấp các phần tử trong mảng theo thứ tự tăng dần giá trị 
+// Nếu sắp xếp thành cong thì trả về TRUE ngược lại thì trả về FALSE
+// $arr3 = array(5,6,7,3);
+// echo sort($arr3).
+
+
+// //hàm array_reverse()
+// $arr3 = array(5,6,7,3);
+// $arr4 = array_reverse($arr3);
+// hàm trả về một mảng đảo ngược thứ tự các phần tử của mảng ban đầu
+
+// // hàm array_merge()
+// $arr3 = array(1,2,3);
+// $arr4 = array(4,5,6);
+// $arr5 = array_merge($arr3,$arr4);
+// print_r($arr5); gộp 2 hay nhiều mảng và trả về mảng tổng 
+
+// // hàm array_search()
+// $arr = array('Hoàng','Sẽ','Thành','Công');
+// echo array_search('Hoàng',$arr);
+// hàm trả về vị trí của phần tử có value = 'Hoàng'
+
+// // phàm array_slice($arr,$begin,$length)
+// $arr = array(1,2,3,4,5);
+// $arr1 = array_slice($arr,0,2);
+// print_r($arr1);
+// hàm trả về một mảng lấy $length phần tử của mảng kể từ phần tử $begin
+
+
 
 ?>
