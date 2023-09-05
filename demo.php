@@ -267,6 +267,20 @@ array_push($arr2,'tôi sẽ','thành công'); //thêm vào mảng 2 phần tử
 // print_r($arr1);
 // hàm trả về một mảng lấy $length phần tử của mảng kể từ phần tử $begin
 
+//hàm array_unique()
+//hàm loại bỏ những phần tử trùng lặp trong mảng và trả về mảng sau khi xoá
+
+// hàm array_key_exists() kiểm tra xem key có tồn tại trong mảng hay không
+
+
+//KIỂU DỮ LIỆU NUMBER
+// làm tròn số round()
+// làm tròn xuống floor()
+// làm tròn lên ceil()
+// lấy ngẫu nhiên rand()
+
+
+
 
 
 ?>
