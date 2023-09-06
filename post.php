@@ -9,7 +9,13 @@
 //gồm(textbox, radio, checkbox, password, textarea, hidden) và được nhận dạng thông qua
 //tên(name) của các input đó.
 //các dữ liệu được nhận qua phương thức post đó đều được lưu trong biến cục bố $_POST
+//được lưu dưới dạng mảng
 
+echo '<pre>';
+print_r($_POST);
+echo '</pre>'.'<br>';
+
+echo 'Tên của tôi là : '.$_POST['fullname'];
 
 
 ?>
