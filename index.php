@@ -10,6 +10,7 @@
 <body>
     <?php
     echo "Hello World!";
+    // echo $_COOKIE['user'];
     ?>
 </body>
 

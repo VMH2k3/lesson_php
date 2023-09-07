@@ -12,6 +12,8 @@ if(!empty($_SERVER['REQUEST_METHOD']))
 
 $result = move_uploaded_file($_FILES['hoang_upload']['tmp_name'],
 'C:\xampp\htdocs\PHP\upload_file\uploads\ '.$_FILES['hoang_upload']['name']
-);
+); //hoàn thành việc di chuyển file tải lên về file uploads
+
+
 var_dump($result);
 ?>
