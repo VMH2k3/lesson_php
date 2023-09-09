@@ -10,9 +10,16 @@ session_start();
 
 //khởi tạo session 
 $_SESSION['username'] = 'Vuminhhoang';
+$_SESSION['admin']='VMH';
 echo '<pre>';
-print_r($_SESSION);
+print_r($_SESSION['username']);
 echo '</pre>';
+
+
+//để xoá một session :
+unset($_SESSION['admin']);
+//để xoá toàn bộ session:
+session_destroy();
 
 
 ?>
