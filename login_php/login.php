@@ -1,5 +1,6 @@
 <?php 
 session_start();
+$_SESSION['user']= [];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -25,10 +26,10 @@ session_start();
         $pass=$_POST['pass'];
 
         //ví dụ đã nhập đúng
-        $_SESSION['user']=$user;
-        $_SESSION['pass']=$pass;
+        $_SESSION['user'][0]=$user;
+        $_SESSION['user'][1]=$pass;
 
-        echo 'bạn đã đăng nhập thành công vào '.$user.'với password :'.$pass;
+        echo 'bạn đã đăng nhập thành công vào '.$_SESSION['user'][0].' với password :'.$_SESSION['user'][1];
         
 
     }

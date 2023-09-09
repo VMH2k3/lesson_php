@@ -11,10 +11,12 @@ session_start();
 </head>
 
 <body>
-    <h3>Bạn đã đăng nhập thành công với: </h3>
-    <br>
-    <h2>Username: <?php $_SESSION['user']?></h2>
-    <h2>Password: <?php $_SESSION['pass']?></h2>
+    <?php
+    echo '<h3>Bạn đã đăng nhập thành công với: </h3>
+
+    <h2>Username:'.$_SESSION['user'][0].'</h2>
+    <h2>Password:'.$_SESSION['user'][1].' </h2>';
+    ?>
 </body>
 
 </html>
