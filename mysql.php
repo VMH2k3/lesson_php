@@ -4,7 +4,7 @@
 
     //Tạo class
     class hinas {
-        function sum($a,$b){
+    public    function sum($a,$b){
             $sum = $a+$b;
             echo 'Tổng của '.$a.' và '.$b.' là: '.$sum;
         }
