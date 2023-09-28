@@ -15,7 +15,7 @@ try {
 // $statement -> bindParam(':address',$address);
 
     //Cách 2
-$fullname = "Vũ Mạnh Cường";
+$fullname = "Hoàng Thị Soan";
 $age = 48;
 $address = "Tiền Phong-Vĩnh Bảo-Hải Phòng";
 $data = [

@@ -9,10 +9,12 @@ $id = 4;
 
 try {
     $statement = $connect ->prepare($sql);
+    //cách 1
     // $statement->bindParam(':fullname',$fullname);
     // $statement->bindParam(':age',$age);
     // $statement->bindParam(':address',$address);
     // $statement->bindParam(':id',$id);
+    //cách 2
     $data = [
         'fullname'=>$fullname,
         'age'=>$age,
